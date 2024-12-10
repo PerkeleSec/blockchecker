@@ -1,6 +1,7 @@
 # IP Blocklist Checker
 
 Script for checking IPs against DNS blocklists, contained in Docker.
+Useful for email senders and for Email Web Security analysis/op-sec.
 
 ## Quick Start
 To pull from Docker:
