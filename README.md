@@ -15,5 +15,7 @@ docker run -it --rm -v "${PWD}:/app/input" perke13/blockcheck:latest
 # Using the Tool
 
 When asked, choose option 1 for single IP or 2 for file input, 3 to quit.
-For file input test, use built-in path: /app/data/sample_ips.txt
+Input single IP or file path depending on chosen option.
+
+*For file input test, use built-in path: /app/data/sample_ips.txt
 Locally will take local path also.
