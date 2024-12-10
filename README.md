@@ -24,4 +24,4 @@ When asked, choose option 1 for single IP or 2 for file input, 3 to quit.
 Input single IP or file path depending on chosen option.
 
 *For file input test, use built-in path: /app/data/sample_ips.txt
-Locally will take local path also.
+If run locally will take local path also.
