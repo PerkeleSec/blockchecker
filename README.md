@@ -9,7 +9,12 @@ To pull from Docker:
 docker pull perke13/blockcheck:latest
 docker run -it --rm -v "${PWD}:/app/input" perke13/blockcheck:latest
 ```
-
+IMPORTANT For Apple Silicon
+run this docker command instead
+```bash
+docker pull perke13/blockcheck:latest
+docker run -it --rm -v "${PWD}:/app/input" --platform linux/amd64 --tty perke13/blockcheck:latest
+```
 ## File Paths
 - Built-in txt sample in Docker to test file input: `/app/data/sample_ips.txt`
 
