@@ -4,13 +4,13 @@ Script for checking IPs against DNS blocklists, contained in Docker.
 Useful for email senders and for Email Web Security analysis/op-sec.
 
 ## Quick Start
-To pull from Docker:
+To pull and run from Docker:
 ```bash
 docker pull perke13/blockcheck:latest
 docker run -it --rm -v "${PWD}:/app/input" perke13/blockcheck:latest
 ```
-IMPORTANT For Apple Silicon
-run this docker command instead
+IMPORTANT For Apple Silicon (M1, M2...)
+run with this docker command instead
 ```bash
 docker pull perke13/blockcheck:latest
 docker run -it --rm -v "${PWD}:/app/input" --platform linux/amd64 --tty perke13/blockcheck:latest
