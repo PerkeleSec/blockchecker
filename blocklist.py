@@ -27,7 +27,6 @@ class blockchecker:
     def reverse_ip(self, ip: str) -> str:
         """Reverse the IP address for Blocklist lookup capbility"""
         try:
-            # Validate IP address to make sure it's valid
             ipaddress.ip_address(ip)
             return '.'.join(reversed(ip.split('.')))
         except ValueError:
@@ -85,7 +84,6 @@ class blockchecker:
         }
 
     def check_ip_list(self, ip_list: List[str]):
-        """Process a list of IPs."""
         total_ips = len(ip_list)
         print(f"\nProcessing {total_ips} IP addresses...")
 
@@ -100,7 +98,6 @@ class blockchecker:
                 print(f"Unexpected error with IP {ip}: {e}")
 
     def print_results(self, results: Dict):
-        """ Show result """
         print(f"\nResults for IP: {results['ip']}")
         print(f"Check completed in {results['elapsed_time']:.2f} seconds")
         print("-" * 60)
@@ -119,12 +116,10 @@ class blockchecker:
 
 
 def clean_path(path: str) -> str:
-    """Clean file path by removing quotes and extra spaces """
     return path.strip().strip('"').strip("'").strip()
 
 
 def read_ip_list(file_path: str) -> List[str]:
-    """Read IPs from a file, skipping empty lines and # comments"""
     file_path = clean_path(file_path)
     try:
         with open(file_path, 'r') as f:
