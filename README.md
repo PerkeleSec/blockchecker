@@ -27,3 +27,4 @@ run with this docker command instead
 docker pull perke13/blockcheck:latest
 docker run -it --rm -v "${PWD}:/app/input" --platform linux/amd64 --tty perke13/blockcheck:latest
 ```
+Requires dnspython==2.4.2 to run locally.
